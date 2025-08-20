@@ -31,7 +31,7 @@ const CreateAccount=()=>
                      <br></br>
                      <button className="bg-orange-500 rounded-sm p-3 w-90 mt-1 text-white" type="submit">CONTINUE</button>
                        
-                       <p className="text-gray-700 mt-7 text-sm">By creating an account, I accept the <Link to={"/terms-and-conditions"}> <b>Terms & Conditions & Privacy Policy </b> </Link></p>
+                       <p className="text-gray-700 mt-7 text-sm">By  creating an account, I accept the <Link to={"/terms-and-conditions"}> <b>Terms & Conditions & Privacy Policy </b> </Link></p>
          
                      </div>
          
