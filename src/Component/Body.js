@@ -4,6 +4,8 @@ import FoodBanner from "./FoodBanner";
 import ResturantCard from "./ResturantCard";
 
 
+
+
 const Body=()=>
 {
    
@@ -45,7 +47,7 @@ const Body=()=>
       <hr className="mt-10 mx-30 w-270"></hr>
     <div className=" ml-10">
       <h1 className="mt-10 mb-5 mx-5 text-2xl font-bold"> Restaurants with online food delivery in Mysore</h1>
-      <div className=" flex flex-wrap ">
+      <div className=" flex flex-wrap  pl-15">
          {dResCard.map((rcard)=>{
             if(resCard.length==0)
             {

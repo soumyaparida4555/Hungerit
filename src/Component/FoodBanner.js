@@ -7,7 +7,7 @@ const FoodBanner=(props)=>
     return(
 
      <div className="">
-     <img className="w-38 h-29 m-1 " src={bann_img+imageId}></img>
+     <img className="w-27 h-27 m-0.5  " src={bann_img+imageId}></img>
     </div>
 
         

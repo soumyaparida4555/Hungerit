@@ -7,6 +7,9 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import LoginPage from "./Component/LoginPage";
 import CreateAccount from "./Component/CreateAccount";
 import TermCondition from "./Component/TermCondition";
+import Home from "./Component/Home";
+
+import TermCondition from "./Component/TermCondition";
 
 
 
@@ -20,7 +23,9 @@ const App=()=>{
         <div className="">
             
             <Header/>
+            
             <Outlet/>
+            
         </div>
     )
 }
@@ -39,6 +44,7 @@ const rout=createBrowserRouter([
             {
              path:"/",
              element:<Body/>
+            
             },
         
            {
@@ -52,7 +58,17 @@ const rout=createBrowserRouter([
            ,{
             path:"/terms-and-conditions",
             element:<TermCondition/>
+           },
+           {
+            path:"/Home",
+            element:<Home/>
+           },
+           {
+            path:"/Term-conditions",
+            element:<TermCondition/>,
+            
            }
+           
 
         ]
     }

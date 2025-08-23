@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Header=()=>
 {
-    const [btnLogin,setbtnLogin]=useState("Login");
+    const [btnLogin,setbtnLogin]=useState("Sign in");
     
 
 
@@ -30,12 +30,12 @@ const Header=()=>
     
         <ul className="flex  ">
         
-        <li className="px-5 pt-4">Home</li>
+       <Link to={"/Home"}> <li className="px-5 pt-4">Home</li></Link>
         <li className="px-5 pt-4">Contact</li>
         <li className="px-5 pt-4">About</li>
         
-       <Link to={"/login"}> <li className="px-5 size-8 pr-4 mt-4 pb-4 w-19 rounded-md bg-green-500 " type="submit" onClick={()=>{
-          return btnLogin=="Login"?setbtnLogin("Logout"):setbtnLogin("Login");
+       <Link to={"/login"}> <li className="  ml-4 p-2 pl-6.5 font-bold mt-2  w-25 h-12 rounded-lg bg-black text-white " type="submit" onClick={()=>{
+          return btnLogin=="Sign in"?setbtnLogin("Sign out"):setbtnLogin("Sign in");
        }}>{btnLogin}</li></Link>
         
         </ul>

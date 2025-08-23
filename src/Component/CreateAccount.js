@@ -1,10 +1,13 @@
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 
 const CreateAccount=()=>
 {
+    
+
     return(
 
         <div className="c-account mt-2">
@@ -26,7 +29,7 @@ const CreateAccount=()=>
                      <input type="Name"  placeholder="Name" className="h-18 p-5   w-90 border-1 border-solid border-gray-300  hover:text-orange-500 pb-3"/>
                       <input type="email"  placeholder="Email" className="h-18 p-5   w-90 border-1 border-solid   border-gray-300  hover:text-orange-500 pb-3"/>
                      
-                     <h2 className="text-blue-400 mt-3">Have a referral code?</h2>
+                    <h2 className="text-blue-400 mt-3 mb-1" >Have a referral code </h2>
 
                      <br></br>
                      <button className="bg-orange-500 rounded-sm p-3 w-90 mt-1 text-white" type="submit">CONTINUE</button>
