@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { logo } from "../utills/constrains";
 import { Link } from "react-router-dom";
+import useStatuss from "../utills/useStatuss";
 
 
 
@@ -13,7 +14,7 @@ const Header=()=>
 {
     const [btnLogin,setbtnLogin]=useState("Sign in");
     
-
+     const intStatus=useStatuss();
 
     return <div className=" border-4 border-solid border-white h-20 shadow-lg flex justify-evenly">
 
@@ -29,12 +30,12 @@ const Header=()=>
         
     
         <ul className="flex  ">
-        
+        <li className="px-5 pt-4">{intStatus==="offline"?"❌":"✅"}</li>
        <Link to={"/Home"}> <li className="px-5 pt-4">Home</li></Link>
         <li className="px-5 pt-4">Contact</li>
         <li className="px-5 pt-4">About</li>
         
-       <Link to={"/login"}> <li className="  ml-4 p-2 pl-6.5 font-bold mt-2  w-25 h-12 rounded-lg bg-black text-white " type="submit" onClick={()=>{
+       <Link to={"/login"}> <li className="  ml-4 p-2 pl-6.5 font-bold mt-2  w-25 h-12 rounded-lg bg-black text-white active:w-30 active:h-15 "  type="submit" onClick={()=>{
           return btnLogin=="Sign in"?setbtnLogin("Sign out"):setbtnLogin("Sign in");
        }}>{btnLogin}</li></Link>
         

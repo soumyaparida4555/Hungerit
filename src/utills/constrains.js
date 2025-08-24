@@ -6,3 +6,5 @@ export const logo="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3
  export const card_img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const login_img="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r";
+
+export  const card_menu="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.3243113&lng=76.5863882&restaurantId=";

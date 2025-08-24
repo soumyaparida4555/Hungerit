@@ -1,4 +1,4 @@
-import  React from "react";
+import  React, { lazy, Suspense } from "react";
 import {createRoot} from "react-dom/client";
 import Header from "./Component/Header";
 import Body from "./Component/Body";
@@ -30,7 +30,7 @@ const App=()=>{
     )
 }
 
-
+ const Card_Menu = lazy(()=>(import('./Component/Card_Menu')))
 
 
 const rout=createBrowserRouter([
@@ -67,6 +67,10 @@ const rout=createBrowserRouter([
             path:"/Term-conditions",
             element:<TermCondition/>,
             
+           },
+           {
+            path:"/rest-menu/:resid",
+            element:<Suspense fallback={<div>Loading................</div>}><Card_Menu/></Suspense>
            }
            
 
